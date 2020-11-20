@@ -1,0 +1,402 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+*{
+	padding:0;
+	margin:0;
+}
+.header-area {
+	background:linear-gradient(rgb(135,50,156,.8),rgb(135,50,156,.8)),url(../img/sli.png);
+	background-position:center bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 600px;
+	padding-top: 30px;
+}
+*ul{
+	list-style:none;
+}
+.sticky{
+	
+}
+.logo-area{}
+.logo-area a{}
+.logo-area a img {
+	margin-top: 12px;
+}
+.menu-area {
+	float: right;
+}
+.menu-area ul li {
+	display: inline-block;
+	margin-top: 15px;
+}
+.menu-area ul li a {
+	padding: 15px;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+.menu-area ul li a:hover{
+	background:#643A79;
+	transition:.5s;
+	border-radius:5px;
+}
+.active{
+	background:#643A79;
+	transition:.5s;
+	border-radius:5px;
+}
+
+.slider-content {
+	text-align: center;
+	margin-top:16%;
+}
+.slider-content-heading h2 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+.slider-content-button {
+	text-align: center;
+	margin: auto;
+}
+.slider-content-button a{
+	color:#ffffff;
+}
+.btn-color{
+	background:#EB7D4B;
+}
+.service-area{
+	padding:100px 0;
+	background:#17C2A4;
+	color:#ffffff;
+}
+.service-head {
+	text-align: center;
+	padding-bottom: 90px;
+}
+.service-head h1 {
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.service-head p {
+	font-size: 18px;
+	padding-top: 30px;
+}
+.service-head .separator {
+	width: 76px;
+	height: 3px;
+	background: #14A58C;
+	margin: auto;
+}
+.services-part {
+	text-align: center;
+}
+.services-part-img {
+	padding-bottom: 50px;
+}
+.services-part-img img{
+	height:134px;
+}
+.services-part-content{}
+.services-part-content h3 {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.services-part-content p {
+	font-size: 17px;
+}
+.team-area{
+	padding:100px 0;
+	background:#E7F1F8;
+	color:#3C4761;
+}
+.team-head {
+	text-align: center;
+	padding-bottom: 90px;
+}
+.team-head h1 {
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.team-head p {
+	font-size: 17px;
+	padding-top: 30px;
+}
+.team-head .separator {
+	width: 76px;
+	height: 3px;
+	background: #C8D9E5;
+	margin: auto;
+}
+.team-part-img {
+	width:150px;
+	height:150px;
+	border-radius:50%;
+}
+.team-part-img img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.team-part-content {
+	padding-top: 30px;
+	text-align: center;
+}
+.team-part-content{}
+.team-part-content h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+.team-part-content h6 {
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 30px;
+	color:#30BAE7;
+}
+.team-part-content p{}
+.social-icon {
+	text-align: center;
+	padding-top: 20px;
+}
+.icon-fb {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #BDD1DF;
+	text-align: center;
+}
+.icon-fb {
+	display: inline-block;
+}
+.icon-fb a {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+.skill-area{
+	padding:100px 0;
+	background:#ffffff;
+	color:#3C4761;
+}
+.skill-head {
+	text-align: center;
+	padding-bottom: 90px;
+}
+.skill-head h1 {
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.skill-head p {
+	font-size: 18px;
+	padding-top: 30px;
+}
+.skill-head .separator {
+	width: 76px;
+	height: 3px;
+	background: #DFE8ED;
+	margin: auto;
+}
+.skill-part {
+	text-align: center;
+}
+.skill-part-content h3 {
+	padding-top: 30px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+
+
+
+.portfolio-area{
+	background:#FFDD99;
+	padding:100px 0;
+	color:#393939;
+}
+.portfolio-header{}
+.portfolio-header h1{font-weight:700;}
+.portfolio-header .separator {
+	width: 76px;
+	height: 3px;
+	background: #E5C37F;
+	margin: auto;
+	
+}
+.portfolio-header p {
+	padding-top: 20px;
+}
+.portfolio-button {
+	padding: 50px 0;
+}
+.portfolio-button .btn{
+	background:#EBC985;
+}
+.portfolio-button .active{
+	background:#fff;
+}
+.portfolio-button .btn:hover{
+	background:#fff;
+}
+.portfolio-part {
+	padding-bottom: 40px;
+}
+.portfolio-part-img {
+	padding-bottom: 20px;
+}
+.portfolio-part-img img {
+	width: 400px;
+	height: 230px;
+}
+.portfolio-part-content{}
+.portfolio-part-content h4{
+	font-size:24px;
+	font-weight:700;
+}
+.about-area{
+	background:#D74680;
+	padding:100px 0;
+	color:#fff;
+}
+.about-header{
+	text-align:center;
+}
+.about-header h1{font-weight:700;}
+.about-header .separator {
+	width: 76px;
+	height: 3px;
+	background: #B73C6D;
+	margin: auto;
+	
+}
+.about-header p {
+	padding-top: 20px;
+}
+.about-content {
+	padding-top: 40px;
+}
+.about-content-img {
+	display: block;
+	float: left;
+	padding-right: 60px;
+}
+.about-content-img img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.about-content-article {
+	font-size: 18px;
+}
+.about-content-article p{}
+.about-content-article h5 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.about-content-article h6 {
+	font-size: 14px;
+	color: #F4B592;
+}
+.contact-header{
+	text-align:center;
+}
+.contact-header h1{font-weight:700;}
+.contact-header .separator {
+	width: 76px;
+	height: 3px;
+	background: #273A71;
+	margin: auto;
+	
+}
+.contact-header p {
+	padding: 20px 0;
+	font-size: 18px;
+}
+.contact-area{
+	background:#3C5399;
+	padding:100px 0;
+	color:#fff;
+}
+.form-bg{
+	background:#273A71;
+	border:1px solid #273A71;
+}
+.contact-area textarea{
+	height:150px;
+}
+.contact-btn.text-center {
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+}
+.fotter-nav {
+	background: #334B8E;
+}
+.footer-menu {
+	text-align: center;
+}
+.footer-menu li {
+	display: inline-block;
+	margin-top: 12px;
+}
+.footer-menu li a {
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+.footer-menu-active{
+	color:#30BAE7;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
